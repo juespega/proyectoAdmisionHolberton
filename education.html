@@ -14,6 +14,53 @@
   </head>
   <body class="works_on_smartphone">
     <header>
+      <div class="right">
+        <ul>
+          <li>
+            <div id="fb-root"></div>
+            <script>
+              (function (d, s, id) {
+                var js,
+                  fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src =
+                  "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                fjs.parentNode.insertBefore(js, fjs);
+              })(document, "script", "facebook-jssdk");
+            </script>
+
+            <!-- Your share button code -->
+            <div
+              class="fb-share-button"
+              data-href="https://www.facebook.com/"
+              data-layout="button"
+              data-size="small"
+            >
+              <a
+                target="_blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F&amp;src=sdkpreparse"
+                class="fb-xfbml-parse-ignore"
+                >Share</a
+              >
+            </div>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+              class="twitter-share-button"
+              data-show-count="false"
+              >Tweet</a
+            >
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </li>
+        </ul>
+      </div>
       <ul>
         <li class="logo">
           <img
@@ -23,39 +70,41 @@
             src="https://apply.holbertonschool.com/holberton-logo.png"
           />
         </li>
-
+        <li><a href="./index.html" target="_blank">Home</a></li>
         <li><a href="./tweets.html" target="_blank">Tweets</a></li>
         <li>
           <a href="./employmentHistory.html" target="_blank"
             >Employment History</a
           >
         </li>
-        <li><a href="./index.html" target="_blank">Education</a></li>
       </ul>
     </header>
     <main>
       <article>
-        <h1>About Me</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam
-          placeat repellendus quod, magni minus iste eius quae culpa, voluptates
-          aspernatur. Nesciunt expedita distinctio soluta, ab quaerat impedit
-          ullam sapiente!
-        </p>
-        <h2>My hobbies</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          vero cum possimus cumque est iste obcaecati molestiae excepturi
-          reprehenderit assumenda, at, repellat animi libero voluptates
-          adipisci, odio numquam explicabo fugiat.
-        </p>
-        <h3>Strengths and Weaknesses</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Necessitatibus dolor quos repudiandae illum blanditiis excepturi
-          corporis minima enim delectus dolore sit modi, porro cum ab explicabo!
-          Ducimus omnis corrupti adipisci.
-        </p>
+        <h1>Education</h1>
+        <ul>
+          <li>
+            <h2>Specialist in Human Talent Management</h2>
+            <h3>CEIPA</h3>
+            <p>June 2017 - October 2018</p>
+          </li>
+          <li>
+            <h2>Business administrator</h2>
+            <h3>UNICIENCIA</h3>
+            <p>August 2012 - April 2016</p>
+          </li>
+          <li>
+            <h2>System technologist</h2>
+            <h3>Autonoma de las Americas</h3>
+            <p>January 2006 - December 2007</p>
+          </li>
+          <li>
+            <h2>Software Development Technician</h2>
+            <h3>CESDE</h3>
+            <p>January 2004 - December 2005</p>
+          </li>
+        </ul>
+
         <a href="https://www.holbertoncolombia.com/"
           ><img
             src="https://apply.holbertonschool.com/holberton-logo.png"
@@ -65,7 +114,24 @@
       </article>
 
       <aside>
-        <p>"marcador de posición para agregar hilo de comentarios más tarde"</p>
+        <div id="disqus_thread"></div>
+        <script>
+          (function () {
+            // DON'T EDIT BELOW THIS LINE
+            var d = document,
+              s = d.createElement("script");
+            s.src = "https://about-me-awxnstclpe.disqus.com/embed.js";
+            s.setAttribute("data-timestamp", +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+
+        <noscript
+          >Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript"
+            >comments powered by Disqus.</a
+          >
+        </noscript>
       </aside>
     </main>
     <footer>

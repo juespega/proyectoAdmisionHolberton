@@ -17,3 +17,11 @@ aside {
   flex: 1;
   overflow-y: auto;
 }
+
+p {
+  background-color: #00ccff;
+}
+
+a:hover {
+  color: #00ccff;
+}
