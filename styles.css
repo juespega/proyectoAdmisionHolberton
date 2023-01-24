@@ -20,6 +20,7 @@ aside {
 
 p {
   background-color: #00ccff;
+  border-radius: 5px;
 }
 
 a:hover {
